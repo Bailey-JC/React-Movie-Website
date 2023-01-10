@@ -1,13 +1,153 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  --stan-color: #fff;
+  --stan-background: #202020;
+  --stan-blue: #1989fa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.container {
+  padding: 32px 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--stan-color);
+}
+
+input {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 1.6px;
+  border: none;
+  width: 100%;
+  max-width: 300px;
+  padding: 8px !important;
+  color: var(--stan-color);
+}
+
+.click {
+  transition: 300ms ease;
+  cursor: pointer;
+}
+
+.click:hover {
+  transform: scale(1.05);
+}
+
+.click:active {
+  transform: scale(1);
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--stan-color);
+}
+p {
+  /* color: var(--stan-color); */
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+  /* margin-bottom: 24px; */
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 400;
+  /* margin-bottom: 40px; */
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+  /* margin-bottom: 24px; */
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  width: 160px;
+  background-color: #333333;
+  border: none;
+  height: 48px;
+  transition: all 200ms ease;
+}
+
+.btn:hover {
+  background-color: var(--stan-blue);
+}
+
+.links:hover {
+  color: var(--stan-blue);
+}
+
+.blue {
+  color: var(--stan-blue);
+}
+
+.search-bar__container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  transition: all 200ms ease;
+  background-color: #333333;
+  text-align: left;
+  border: none;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.search-bar__btn {
+  border: none;
+  width: 38px;
+  background-color: var(--stan-blue);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  transition: all 200ms ease;
+
+}
+
+.search-bar__icon {
+  color: var(--stan-color);
+}
+
+.search-bar__icon:hover {
+  transform: scale(1.2);
+  transition: all 200ms ease;
+  color: var(--stan-color);
+}
+
+
+.overflow__hidden {
+  overflow: hidden;
 }

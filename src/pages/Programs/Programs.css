@@ -1,0 +1,30 @@
+#programs__body {
+  background-color: var(--stan-background);
+}
+
+.programs__header {
+  margin: 16px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.programs__search-result {
+  color: var(--stan-color);
+}
+
+.programs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -24px;
+}
+
+.programs__filter {
+  border: 1px red;
+  border-radius: 6px;
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+
+@media (max-width: 768px) {
+
+}

@@ -1,0 +1,27 @@
+#myList {
+  background-color: var(--stan-background);
+  height: 100vh;
+}
+
+.myList__title {
+  padding-left: 8px;
+}
+
+.myList__empty--para {
+  margin: 16px 0;
+  color: var(--stan-color);
+}
+
+.myList__add--icon {
+  width: 16px;
+  height: 16px;
+}
+
+.btn__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.myList__btn {
+  color: var(--stan-color);
+}

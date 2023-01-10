@@ -1,0 +1,80 @@
+#program__info {
+  background-color: var(--stan-background);
+  height: 80vh;
+}
+
+.program__selected--top {
+  margin-bottom: 16px;
+}
+
+.return__btn {
+  font-size: 32px;
+}
+
+.program__selected {
+  display: flex;
+}
+
+.program__selected--figure {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.program__selected--description {
+  width: 60%;
+  padding-right: 62px;
+  display: flex;
+  flex-direction: column;
+}
+
+.program__selected--title {
+  margin-bottom: 8px;
+  font-size: 48px;
+}
+
+.program__details--top {
+  margin-bottom: 32px;
+  color: var(--stan-color);
+}
+
+.program__overview,
+.program__genre,
+.program__details--bottom {
+  margin-bottom: 24px;
+  color: var(--stan-color);
+}
+
+.program__details--top {
+  display: flex;
+}
+
+.program__detail,
+.program__detail--spacer {
+  padding-right: 12px;
+}
+
+.program__detail--spacer {
+    opacity: 30%;
+}
+
+.program__detail--icon {
+  margin-right: 8px;
+}
+
+.program__details--bottom {
+  display: flex;
+}
+
+.program__detail--bottom {
+    margin-right: 56px;
+}
+
+.programInfo__btn--plus,
+.programInfo__btn--text {
+    color: var(--stan-color);
+}
+
+.programInfo__btn--text {
+    padding: 0 24px;
+}

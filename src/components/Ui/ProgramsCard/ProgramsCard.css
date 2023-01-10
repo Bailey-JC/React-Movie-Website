@@ -1,0 +1,72 @@
+.programsCard__container {
+  padding: 24px;
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+
+.programsCard__poster {
+  max-height: 450px;
+  max-width: 300px;
+  width: 100%;
+  height: 450px;
+  transition: all 200ms ease;
+  /* Fix height later */
+}
+
+.programsCard__poster:hover {
+  transform: scale(1.05);
+}
+
+.programsCard__poster--skeleton {
+  background-color: rgba(204, 204, 204, 0.651);
+  width: 300px;
+  height: 450px;
+}
+
+.programsCard__info {
+  width: 100%;
+  max-width: 300px;
+  padding-top: 8px;
+}
+
+.programsCard__title {
+  font-size: 24px;
+}
+
+.programsCard__title--skeleton {
+  width: 275px;
+  height: 29px;
+  background-color: rgba(204, 204, 204, 0.651);
+  margin-bottom: 8px;
+}
+
+.programsCard__year {
+  font-size: 16px;
+  color: grey;
+}
+
+.programsCard__year--skeleton {
+  width: 50px;
+  height: 29px;
+  background-color: rgba(204, 204, 204, 0.651);
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px) {
+  .programsCard__container {
+    width: 50%;
+  }
+}
+
+/* SMALL PHONES, LARGE SMARTPHONES */
+@media (max-width: 550px) {
+  .programsCard__container {
+    width: 100%;
+  }
+}
+

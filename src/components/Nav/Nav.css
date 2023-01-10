@@ -1,0 +1,151 @@
+#nav {
+  background-color: var(--stan-background);
+}
+
+.nav__container {
+  width: 100%;
+  max-width: 1200px;
+  height: 80px;
+  padding: 0 24px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--stan-color);
+}
+
+.nav__left {
+  display: flex;
+}
+
+.nav__logo--img {
+  width: 160px;
+  height: auto;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link:hover {
+  color: var(--stan-blue);
+}
+
+.nav__link {
+  color: var(--stan-color);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 24px;
+  cursor: not-allowed;
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+}
+
+.search__container {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  margin-left: 24px;
+}
+
+.search-bar__icon {
+  font-size: 24px;
+}
+
+.btn__menu {
+  font-size: 32px;
+  border: none;
+  background-color: transparent;
+  color: var(--stan-color);
+  /* fix color */
+  display: none;
+}
+
+.menu__backdrop {
+  position: absolute;
+  background-color: #242424;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  transition: all 500ms ease;
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.menu--open {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.menu--open .menu__backdrop {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.menu__list {
+  padding: 32px 0;
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__link {
+  color: white;
+  font-size: 40px;
+}
+.menu__link:hover {
+  color: var(--stan-blue);
+}
+
+.btn__menu--close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 8px;
+  color: white;
+}
+
+.nav__profile--wrapper {
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.nav__profile {
+  max-width: 40px;
+  max-width: 40px;
+  margin-right: 8px;
+  border-radius: 99px;
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px) {
+  .btn__menu {
+    display: block;
+  }
+
+  .nav__links,
+  .search-bar__icon {
+    display: none;
+  }
+}

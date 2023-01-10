@@ -1,0 +1,42 @@
+#landing {
+  background-color: var(--stan-background);
+}
+
+.landing__background-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__info--main,
+.header__info--secondary {
+  text-align: center;
+}
+
+.header__info--secondary {
+  margin-bottom: 32px;
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px) {
+  .header__info--main {
+    font-size: 42px;
+  }
+
+  .header__info--secondary,
+  .trending__title--heading {
+    font-size: 20px;
+  }
+}
+
+/* SMALL PHONES, LARGE SMARTPHONES */
+@media (max-width: 550px) {
+  .header__info--main {
+    font-size: 36px;
+  }
+
+  .header__info--secondary,
+  .trending__title--heading {
+    font-size: 18px;
+  }
+}
